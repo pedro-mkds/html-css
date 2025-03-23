@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+  background-image: linear-gradient(to right, #8FC1B5, #589A8D, #00584d);
+  font-family: Arial, Helvetica, sans-serif;
+  /*
+  Medidas Absolutas
+  cm, mn, in, px, pt, pc
+
+  Medidas Relativas
+  em, ex, rem, vw, vh, %
+  16px geralmente = 1em
+
+  RECOMENDAÇÃO OFICIAL, USAR PX OU EM
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic ;
+  lighter, normal, bold, bolder*/
+
+  font: italic 400 1em Arial;
+  /* shorthand font
+
+  - font-style -> font-weight -> font-size -> font-family 
+  
+  */
+}
+
+main{
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px #00443c;
+  width: 600px;
+  padding: 30px;
+  margin: auto;
+}
+
+h1{
+  color: #265C4B;
+}
+
+h2{
+  color: #146551;
+}

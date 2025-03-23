@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@font-face {
+  font-family: plus;
+  src: url('fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf')format('truetype'), url('fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+  em HMTL e id = em CSS "#" (pode apenas 1 elemento)
+  em HTML é class = em CSS é "." (pode vários elementos)
+*/
+
+
+body { 
+  background-color: #f6f6fa;
+  font-family: 'plus';
+}
+
+h1 { 
+  font-family: 'plus';
+  color: #0D174F;
+  text-align: center;
+  padding: 20px;
+}
+
+h1#principal {
+  text-align: center;
+  color: #ffffff;
+  background-color: #000833;
+  padding: 5px;
+}
+
+h2 {
+  font-family: 'plus';
+  color: #283478;
+  padding: 10px;
+}
+
+p {
+  text-align: left;
+}
+
+
+.basic {
+  color: #4f67f0;
+}
+
+.intermediary {
+  color: #4051b4;
+}
+
+.advanced {
+  color: #324094;
+}
+
+.highlight {
+  background-color: #dfe4fd;
+}
