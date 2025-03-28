@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio das Tabelas</title>
+  <style>
+    body {
+      background-color: #f6f7f8;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      margin: auto;
+    }
+
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      width: 600px;
+    }
+
+    td,
+    th {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    .category {
+      background-color: #505050;
+      color: white;
+      font-weight: bold;
+    }
+
+    .girl {
+      background-color: rgb(255, 72, 102);
+      color: white;
+      font-weight: bold;
+    }
+
+    .men {
+      background-color: rgb(74, 74, 250);
+      color: white;
+      font-weight: bold;
+    }
+
+    tfoot {
+      background-color: lightgray;
+      color: #202020;
+    }
+
+    .average {
+      background-color: rgb(141, 141, 141);
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .area {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .container {
+      overflow-x: auto;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <h1>Desafio Show de Bola do Gustavão</h1>
+  <h2>Primeira parte do Desafio do Gustavao</h2>
+  <p>Primeira Tabela</p>
+  <table>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td rowspan="2">3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td colspan="3">8</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td rowspan="2">10</td>
+      <td colspan="2">11</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+    </tr>
+  </table>
+
+  <h2>Segunda parte do Desafio do Gustavao</h2>
+  <p>Segunda Tabela</p>
+
+  <table>
+    <tr>
+      <td colspan="4">A</td>
+      <td rowspan="4">B</td>
+    </tr>
+    <tr>
+      <td rowspan="4">C</td>
+      <td>D</td>
+      <td>E</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>H</td>
+      <td>I</td>
+    </tr>
+    <tr>
+      <td>J</td>
+      <td>L</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td colspan="4">N</td>
+    </tr>
+  </table>
+
+  <h2>Terceira parte do Desafio do Gustavao</h2>
+  <p>Terceira Tabela</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col" class="category">Grupo</th>
+        <th scope="col" class="category">Nomes</th>
+        <th scope="colgroup" colspan="3" class="category">Filmes</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="rowgroup" rowspan="3" class="girl">Mulheres</th>
+        <td>Ana Maria Santos</td>
+        <td>Alien</td>
+        <td>Rambo</td>
+        <td>Vingadores</td>
+      </tr>
+      <tr>
+        <td>Beatriz Souza</td>
+        <td>Hulk</td>
+        <td>Inception</td>
+        <td>Batman</td>
+      </tr>
+      <tr>
+        <td>Cláudia Melo</td>
+        <td>Oblivion</td>
+        <td>Matrix</td>
+        <td>Big Hero</td>
+      </tr>
+      <tr>
+        <th scope="rowgroup" rowspan="3" class="men">Homens</th>
+        <td>Bruno Mendonça</td>
+        <td>Intocáveis</td>
+        <td>Amnésia</td>
+        <td>Gladiador</td>
+      </tr>
+      <tr>
+        <td>Daniel Lourenço</td>
+        <td>Wall-E</td>
+        <td>Oldboy</td>
+        <td>Dangel</td>
+      </tr>
+      <tr>
+        <td>Fabiano Mota</td>
+        <td>Star Wars 5</td>
+        <td>Taxi Driver</td>
+        <td>Toy Story</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th scope="col">Total de Pessoas Entrevistadas</th>
+        <td colspan="4"><strong>6</strong></td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2>Quarta parte do Desafio do Gustavao</h2>
+  <p>Quarta Tabela</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2" scope="row" class="average">Área</th>
+        <th rowspan="2" scope="row" class="average" style="width: 150px;" >Disciplinas</th>
+        <th colspan="2" scope="rowgroup" class="average">Notas</th>
+        <th rowspan="2" scope="row" class="average">Média</th>
+      </tr>
+      <tr>
+        <th scope="row" class="average">Nota 1</th>
+        <th scope="row" class="average">Nota 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="4" scope="colgroup" class="area">Exatas</th>
+        <td>Matemática</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td>Física</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td>Química</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td>Biologia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <th colspan="4" scope="col" class="average">Média de Exatas</th>
+        <td class="average">0.0</td>
+      </tr>
+      <tr>
+        <th rowspan="2" scope="colgroup" class="area">Humanas</th>
+        <td>História</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td>Geografia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td colspan="4" scope="col" class="average">Média de Humanas</td>
+        <td class="average">0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
