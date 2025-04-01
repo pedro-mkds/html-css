@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/global.css">
+  <title>Exemplo de Form</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div {
+      padding: 10px;
+      color: black;
+ 
+    }
+
+    div input {
+      border-radius: 5px;
+      border-color: black;
+      padding: 5px;
+      background-color: white;
+      color: black;
+    }
+
+    fieldset {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ex de form</h1>
+  <form action="cadastro.php" method="get" autocomplete="on">
+    <fieldset>
+      <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="sxmas" value="M">
+        <label for="sxmas">Masculino</label>
+        <input type="radio" name="sexo" id="sxfem" value="F">
+        <label for="sxfem">Feminino</label>
+    </fieldset>
+    <fieldset>
+      <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebool</label> <br>
+        <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+        <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+        <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+    </fieldset>
+
+    <div>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </div>
+  </form>
+</body>
+</html>
