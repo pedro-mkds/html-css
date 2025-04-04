@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Todas as  demais mídias */
+
+/* Typical Device Breakpoints 
+
+Para dispositivos móveis – 320px — 480px
+iPads e tablets – 481px — 768px
+Laptops e telas pequenas – 769px — 1024px
+Telas grandes e desktops – 1025px — 1200px
+TVs e telas extragrandes – 1201px ou mais
+
+*/
+
+@media screen and (min-width: 768px) {
+  #icon {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+
+  nav li {
+    display: inline-block;
+  }
+
+  nav a {
+    color: white;
+    background-color: red;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    background-color: red;
+    transform: translate(0%, -10%);
+
+  }
+
+    main {
+      width: 768px;
+    }
+
+
+}
+

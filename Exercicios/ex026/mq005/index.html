@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/media-query.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
   <header>
     <h1>Notícias</h1>
     <span id="icon" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -36,6 +37,15 @@
     <p>Site desenvolvido por @pedro.mkds</p>
   </footer>
   <script>
+
+    function mudouTamanho() {
+      if (window.innerWidth >= 768) {
+        menu.style.display = 'block'
+      } else {
+        menu.style.display = 'none'
+      }
+    }
+
     function clickMenu() {
       if (menu.style.display == 'block') {
               menu.style.display = 'none'
